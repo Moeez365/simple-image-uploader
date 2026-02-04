@@ -70,10 +70,10 @@ const App = () => {
         {isLoading && (
           <div className="min-h-96 flex flex-col items-center justify-center md:w-1/2 md:mx-0 mx-10 w-full outline-5 outline-white border border-dashed border-[#c9c9c9] rounded shadow-2xl px-10">
             <div
-              className="h-5 bg-[#dce4ed] rounded flex items-center md:min-w-80 w-full"
+              className="h-2 bg-[#dce4ed] rounded-2xl flex items-center md:min-w-80 w-full"
               id="loader"
             >
-              <span className="w-20 h-4 bg-blue-400"></span>
+              <span className="w-20 h-2 rounded-2xl bg-blue-400"></span>
             </div>
           </div>
         )}
