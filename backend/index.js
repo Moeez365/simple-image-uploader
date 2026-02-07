@@ -7,7 +7,7 @@ import { cloudinaryConfig } from "./cloudinary.js";
 dotenv.config();
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.post("/api/upload", upload.single("image"), fileController);
 app.get("/api/downloads", fileDownload)
